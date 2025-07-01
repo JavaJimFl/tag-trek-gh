@@ -83,11 +83,7 @@ grep -rl --include="*.md" -e "^project: tag-trek" "$VAULT" \
 sed -E -i '
   s@!\[\[([^]]+\.(png|jpe?g|gif|svg|webp))(\|[^]]*)?]]@![\1](<attachments/\1>)@gI
 ' "$DEST/tmp/$rel"
-
-
-
-
-    done
+   done
    
 # 4. Parse the exported notes and copy only referenced images. 
 # Pipeline command #1
@@ -114,6 +110,7 @@ sed -E -i '
 #     attachements/ : The substitution text
 #   >   : Redirect standard output to a file 
 #     "$DEST/tmp/.images-to-copy.txt" (temporary/hidden plain text file)
+# 'foo.png' becomes 'attachments/foo.png'
 
 grep -roihP '!\[\K[^]]+\.(png|jpe?g|gif|svg|webp)' "$DEST/tmp" \
   | sort -u \
@@ -143,7 +140,7 @@ rm -rf "$DEST/tmp"
 #
 # Change to the "$DEST" directory and stage *all* additions, modifications, and deletions in one shot.
 cd "$DEST"
-git add -A .
+git add .
 
 # Commit and push only when there are changes
 #   git diff --quiet                      : Exit code 0 (considered true) if the Git index matches the working tree.
@@ -156,7 +153,7 @@ git add -A .
 #       %T                                : 24-hour time, HH:MM:SS, e.g. '18:00:00'
 #   &&                                    : If the commit returns exit status 0
 #   git push                              : Pushes the changes to the remote repository           
-if git diff --quiet; then
+if git diff --cached --quiet; then
   echo "No unstaged changes."
 else 
   echo "There are unstaged changes."
