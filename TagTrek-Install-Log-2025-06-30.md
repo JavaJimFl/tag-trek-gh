@@ -279,4 +279,41 @@ wsl
 ```
 11.  Restart Docker Engine:
 ![Pasted image 20250630112230.png](<attachments/Pasted image 20250630112230.png>)
+
 - [ ] MSYS
+1. Install and bootstrap MSYS2 to support export-tagtrek.sh script, specifically the variation of `rsync` it uses:
+    1. Download **`msys2-x86_64-<date>.exe`** from [https://www.msys2.org](https://www.msys2.org). 
+    2.  Install to **`C:\msys64`** (default, no spaces).  
+    3. Open **“MSYS2 MSYS”** shell and run:
+```shell
+pacman -Syuu  # full update (may ask to restart shell)  
+pacman -Syuu  # second pass
+```
+2. Install core packages I need for the export-tagtrek.sh script, specifically Git:
+```shell
+pacman -S git rsync diffutils
+```
+3. Put Git Credential Manager (GCM) on PATH
+    1. Reuse the Git for Windows Credential Manager.
+    2. Git-for-Windows is installed at `C:\Program Files\Git`.
+    3. Add its helper directory to MSYS2’s PATH:  
+    ```shell
+    bash echo export PATH="$PATH:/c/Program Files/Git/mingw64/libexec/git-core" >> ~/.bashrc
+     source ~/.bashrc`
+```
+4. Tell MSYS2 Git to use GCM:
+```shell
+bash git config --global credential.helper manager-core
+```
+5. Verify everything:
+```shell
+which pacman # /usr/bin/pacman pacman --version 
+which git # /usr/bin/git git --version 
+which rsync # /usr/bin/rsync 
+```
+6. First credential test.
+```shell
+bash git ls-remote https://github.com/<user>/TagTrek-gh.git
+```
+ - First run → GCM prompt → paste PAT.  
+ - Second run → silent.
