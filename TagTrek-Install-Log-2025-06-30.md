@@ -280,7 +280,7 @@ wsl
 11.  Restart Docker Engine:
 ![Pasted image 20250630112230.png](<attachments/Pasted image 20250630112230.png>)
 
-- [ ] MSYS
+- [x] MSYS ✅ 2025-07-01
 1. Install and bootstrap MSYS2 to support export-tagtrek.sh script, specifically the variation of `rsync` it uses:
     1. Download **`msys2-x86_64-<date>.exe`** from [https://www.msys2.org](https://www.msys2.org). 
     2.  Install to **`C:\msys64`** (default, no spaces).  
