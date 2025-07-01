@@ -138,7 +138,7 @@ rm -rf "$DEST/tmp"
 
 # 7. Replace repo with the workspace temp contents.
 #
-# Change to the "$DEST" directory and stage *all* additions, modifications, and deletions in one shot. 
+# Change to the "$DEST" directory and stage *all* additions, modifications, and deletions in one shot.
 cd "$DEST"
 git add .
 
