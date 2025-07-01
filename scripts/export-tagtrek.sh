@@ -72,18 +72,18 @@ mkdir -p "$DEST/tmp"
 #   	      directory location
 #     Copies the tag-trek file from the absolute path to $src to the destination directory
 
-grep -rl --include="*.md" -e "^project: tag-trek" "$VAULT" \
-  | xargs grep -l "^publish: *true" \
-  | while read -r src; do
-        rel="${src#$VAULT/}"
-	mkdir -p "$DEST/tmp/$(dirname "$rel")"
-	cp "$src" "$DEST/tmp/$rel"
-# Convert  ![[...]]  →  ![filename](attachments/filename)
-# convert  ![[foo.png]]  ➔  ![foo.png](attachments/foo.png)
-sed -E -i '
-  s@!\[\[([^]]+\.(png|jpe?g|gif|svg|webp))(\|[^]]*)?]]@![\1](<attachments/\1>)@gI
-' "$DEST/tmp/$rel"
-   done
+grep -rlZ --include="*.md" -e "^project: tag-trek" "$VAULT" \
+  | while IFS= read -r -d '' src; do
+      echo "$src"
+	  if grep -q '^publish: *true' "$src"; then
+	    rel="${src#$VAULT/}"
+	    mkdir -p "$DEST/tmp/$(dirname "$rel")"
+	    cp "$src" "$DEST/tmp/$rel"
+        # Convert  ![[...]]  →  ![filename](attachments/filename)
+	    # convert  ![[foo.png]]  ➔  ![foo.png](attachments/foo.png)
+	    sed -E -i 's@!\[\[([^]]+\.(png|jpe?g|gif|svg|webp))(\|[^]]*)?]]@![\1](<attachments/\1>)@gI' "$DEST/tmp/$rel"
+	  fi
+    done
    
 # 4. Parse the exported notes and copy only referenced images. 
 # Pipeline command #1
