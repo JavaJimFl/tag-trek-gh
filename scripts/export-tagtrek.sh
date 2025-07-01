@@ -37,26 +37,26 @@ rm -rf "$DEST/tmp"
 # Recreate with parent directories if needed.
 mkdir -p "$DEST/tmp"
 
-# 3. Copy only TagTrek and 'publish: true" notes.
+# 3. Copy only TagTrek and 'publish: true" notes preserving whitespace in file names.
 #
 # Copy only notes with front matter properties "^project: tag-trek" and "^publish: true"
 # Pipeline command #1
 #   grep: pattern search utility
 #     -r: recursively, but don't follow symlinks
 #     -l: list files with matches
+#     -Z: Output a zero byte (the ASCII NUL character) instead of the character that normally
+#         follows a file name, e.g., a newline
 #     --include: use GLOB for markdown files
 #     -e: regular expression for tag-trek project files.
 #     $VAULT: starting directory
 # Pipeline command #2
-#   xargs: bridge between the file results for the first command, the "producer"
-#     and the commands that "consume" items.
-#     grep: pattern search
-#       -l: list the tag-trek files that should be published using the regex "^publish: true"
-# Pipeline command #3
 #   Loop through the file paths passed from the previous command while there are lines
 #   in the pipeline. 
+#     IFS= Internal Field Separator - Preserves filename (inadvertent) leading and trailing whitespace 
 #     Uses the 'read' command 
-#       -r: raw - don't treat backslashes as escape characters
+#       -r   : Raw - don't treat backslashes as escape characters
+#       -d '': This is a NUL delimiter that prevents the 'read' command from splitting the file name
+#              on spaces
 #     Gets the relative path of the file to the vault path using parameter expansion and
 #     Assigns the value to the variable 'rel'.
 #       src: the absolute path the tag-trek file
@@ -67,10 +67,10 @@ mkdir -p "$DEST/tmp"
 #        mkdir
 #   	   -p: creates a directory under the temporary working directory that matches the parent
 #   	       directory of 'rel'
-#          $(dirname "$rel")
-#   	      Command substitution that gets the parent directory from $rel and add to the temp
-#   	      directory location
+#          $(dirname "$rel"): Command substitution that gets the parent directory from $rel and add to the
+#                             temp directory location.
 #     Copies the tag-trek file from the absolute path to $src to the destination directory
+#     Converts an Obsidian embed, ![[...]], into a markdown file link GitHub understands using the 'sed' command.
 
 grep -rlZ --include="*.md" -e "^project: tag-trek" "$VAULT" \
   | while IFS= read -r -d '' src; do
