@@ -279,3 +279,4 @@ wsl
 ```
 11.  Restart Docker Engine:
 ![Pasted image 20250630112230.png](<attachments/Pasted image 20250630112230.png>)
+- [ ] MSYS
