@@ -8,33 +8,37 @@ publish: true
 # TagTrek Bootcamp Day 1 – 2025-07-02
 
 ## 🎯 Goals
-- [ ] 🐣 UI
+- [x] 🐣 UI ✅ 2025-07-02
     - [x] Install Node 20 via nvm ✅ 2025-07-02
-    - [ ] JS refresher: 
+    - [x] JS refresher: ✅ 2025-07-02
+        - [x] Enrolled in W3C Schools JavaScript course
         - [x] Introduction ✅ 2025-07-02
-- [ ] 🌳 Middleware
-    - [ ] Install IntelliJ Community Edition
+- [x] 🌳 Middleware ✅ 2025-07-02
+    - [x] Research Java tutorials
+    - [x] Install IntelliJ Community Edition ✅ 2025-07-02
     - [x] New Java features, 8-21 ✅ 2025-07-02
-    - [ ] Spring Initializr skeleton
-    - [ ] Run `/actuator/health`
+    - [x] Spring Initializr skeleton ✅ 2025-07-02
+    - [x] Run `/actuator/health` ✅ 2025-07-02
 - [x] ⚙️ DevOps ✅ 2025-07-02
     - [x] Install Docker Desktop ✅ 2025-07-02
     - [x] `docker run hello-world` ✅ 2025-07-02
     - [x] Pull postgres: 16 image ✅ 2025-07-02
 
 ## 🐣 UI Track
-Notes | Snippets | Todos…
+Very light today.  Just worked through the JavaScript introduction.
 
 ## 🌳 Middleware Track
-Notes | Snippets | Todos…
+Found an Oracle Java course.  Researched the Java certifications.
 
 ## ⚙️ DevOps Track
-- Pulled postgresql
+- [x] Pulled postgresql Docker image
     - `docker pull postgres:16`
 
 ## 🧩 Topics touched
 - [JavaScript 1.0 - Introduction](JavaScript%201.0%20-%20Introduction.md)
 - [New Features, Java 8-21](New%20Features,%20Java%208-21.md)
+- [Docker 28.2.2 - Configure Postgres Container](Docker%2028.2.2%20-%20Configure%20Postgres%20Container.md)
+- [Spring Initialzr 2025 - Generate Spring Skeleton](Spring%20Initialzr%202025%20-%20Generate%20Spring%20Skeleton.md)
 
 ## 🔍 Insights / Questions
 
