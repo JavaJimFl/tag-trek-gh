@@ -21,6 +21,7 @@ docker run -d --name pg16 \
 ```
 
 ##  Docker command breakdown
+```text
 Docker run - Creates and runs a new container from an image (alias for `docker container run`)
      -d          : Runs the container in the background and prints the container ID to the console
      --name  : The container name
@@ -30,6 +31,7 @@ Docker run - Creates and runs a new container from an image (alias for `docker c
                  pgdata                           : The volume name
                  /var/lib/postgresql/data: The targe path within the container where the volume is                                                   mounted
      postgres:16: The image name (PostgreSQL v16 in this case)
+```
 
 
 --- 
