@@ -44,4 +44,10 @@ Found an Oracle Java course.  Researched the Java certifications.
 
 
 ## 🚀 Next actions
-- [ ]
+[- [ ]](<## 🚀 Next actions
+- [ ] Continue W3C JS course – variables, arrays, functions
+- [ ] Choose and start a structured Java course
+- [ ] Write a simple Spring Boot REST controller
+- [ ] Create a docker-compose.yml with Postgres + Spring Boot
+- [ ] Confirm Spring Boot connects to Postgres and can persist a sample entity
+- [ ] Summarize insights from Java 8–21 new features
