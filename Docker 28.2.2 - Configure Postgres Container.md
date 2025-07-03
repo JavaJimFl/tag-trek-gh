@@ -23,14 +23,14 @@ docker run -d --name pg16 \
 ##  Docker command breakdown
 ```text
 Docker run - Creates and runs a new container from an image (alias for `docker container run`)
-     -d          : Runs the container in the background and prints the container ID to the console
-     --name  : The container name
-     -e           : Environment variables (name-value pairs)
-     -p          : Binds TCP port 5432 of the container to TCP port 5432 of the host
-     -v          : The volume mount passed to Docker, holds the Postgres data.  Persists between                          restarts and recreations,
-                 pgdata                           : The volume name
-                 /var/lib/postgresql/data: The targe path within the container where the volume is                                                   mounted
-     postgres:16: The image name (PostgreSQL v16 in this case)
+     -d                 : Runs the container in the background and prints the container ID to the console
+     --name             : The container name
+     -e                 : Environment variables (name-value pairs)
+     -p                 : Binds TCP port 5432 of the container to TCP port 5432 of the host
+     -v                 : The volume mount passed to Docker, holds the Postgres data.  Persists between restarts and recreations
+pgdata                  : The volume name
+/var/lib/postgresql/data: The targe path within the container where the volume is mounted
+postgres:16             : The image name (PostgreSQL v16 in this case)
 ```
 
 
