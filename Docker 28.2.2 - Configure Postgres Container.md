@@ -30,7 +30,7 @@ Docker run - Creates and runs a new container from an image (alias for `docker c
     -v                 : The volume mount passed to Docker, holds the Postgres data.  Persists between restarts and recreations
         pgdata                  : The volume name
         /var/lib/postgresql/data: The targe path within the container where the volume is mounted
-        postgres:16             : The image name (PostgreSQL v16 in this case)
+    postgres:16             : The image name (PostgreSQL v16 in this case)
 ```
 
 

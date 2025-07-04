@@ -46,7 +46,7 @@ publish: true
     - [ ] Write new `🚀 Next Actions` for upcoming week
 
 ## 🧩 Topics to Review
-- [ ] [JavaScript 1.0 - Introduction](JavaScript%201.0%20-%20Introduction.md) → update after deeper sections
+- [ ] [JavaScript Tutorial - Introduction](JavaScript%20Tutorial%20-%20Introduction.md) → update after deeper sections
 - [ ] [New Features, Java 8-21](New%20Features,%20Java%208-21.md) → add samples and notes
 - [ ] [Docker 28.2.2 - Configure Postgres Container](Docker%2028.2.2%20-%20Configure%20Postgres%20Container.md) → add volume config
 - [ ] [Spring Initializr 2025 - Generate Spring Skeleton](Spring%20Initialzr%202025%20-%20Generate%20Spring%20Skeleton.md) → update with controller and config
