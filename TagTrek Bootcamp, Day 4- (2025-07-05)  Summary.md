@@ -46,10 +46,10 @@ Unit-tested the code I wrote and added an Object mother with an integrated build
 I didn't get to anything on this track today.
 
 ## 🧩 Topic touched
-[JPA Entities](JPA%20Entities.md)
-[Java Records](Java%20Records.md)
-[MapStruct – Java bean mappings, the easy way!](https://mapstruct.org/)
-[Mistaeks I Hav Made: Test Data Builders: an alternative to the Object Mother pattern](http://www.natpryce.com/articles/000714.html)
+- [JPA Entities](JPA%20Entities.md)
+- [Java Records](Java%20Records.md)
+- [MapStruct – Java bean mappings, the easy way!](https://mapstruct.org/)
+- [Mistaeks I Hav Made: Test Data Builders: an alternative to the Object Mother pattern](http://www.natpryce.com/articles/000714.html)
 
 
 ## 🔍 Insights / Questions
