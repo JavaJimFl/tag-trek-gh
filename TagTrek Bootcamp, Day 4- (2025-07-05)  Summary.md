@@ -28,6 +28,10 @@ publish: true
         - [x] AssertJ ✅ 2025-07-06
         - [x] EqualsVerifier ✅ 2025-07-06
         - [x] ToStringVerifier ✅ 2025-07-06
+    - [x] Added code style to Intellij based on the Google Java Style (ChatGPT-generated) ✅ 2025-07-06
+        - [x] Tweaked a couple of settings to meet my preferences ✅ 2025-07-06
+            - [x] 120 char lines ✅ 2025-07-06
+            - [x] No splat imports ✅ 2025-07-06
     - [ ] Create `TrackRepository`, which extends `JpaRepository<Track,Long>`
     - [ ] Add Controller, implement `GET /tracks`
         - [ ] Returns one track
