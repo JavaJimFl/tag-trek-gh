@@ -89,10 +89,13 @@ processors=8
 ```
 
 
-## 🧩 Features touched
+## 🧩 Topic notes
 - [Git 2.50.0.windows.1 - Stop tracking folders or files in Git](Git%202.50.0.windows.1%20-%20Stop%20tracking%20folders%20or%20files%20in%20Git.md)
 - [Intellij Community - Spring Boot Run Configuration](Intellij%20Community%20-%20Spring%20Boot%20Run%20Configuration.md)
 - [Git Various - Rename local and remote Git repository](Git%20Various%20-%20Rename%20local%20and%20remote%20Git%20repository.md)
+- [Java Ecosystem](Java%20Ecosystem.md)
+- [Java Code Structures](Java%20Code%20Structures.md)
+- [Java Micro-Profile Edition Overview](Java%20Micro-Profile%20Edition%20Overview.md)
 
 ## 🔍 Insights / Questions
 - 
