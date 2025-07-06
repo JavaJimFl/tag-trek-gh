@@ -22,6 +22,12 @@ publish: true
         - [x] Write unit tests ✅ 2025-07-06
     - [x] Create a `MapStruct` mapper for the Track record and Track DTO ✅ 2025-07-06
         - [x] Write unit tests ✅ 2025-07-06
+        - [x] Created `application-dev.yaml` file ✅ 2025-07-06
+    - [x] Added dependencies to pom.xml ✅ 2025-07-06
+        - [x] MapStruct ✅ 2025-07-06
+        - [x] AssertJ ✅ 2025-07-06
+        - [x] EqualsVerifier ✅ 2025-07-06
+        - [x] ToStringVerifier ✅ 2025-07-06
     - [ ] Create `TrackRepository`, which extends `JpaRepository<Track,Long>`
     - [ ] Add Controller, implement `GET /tracks`
         - [ ] Returns one track
@@ -47,7 +53,16 @@ I didn't get to anything on this track today.
 
 
 ## 🔍 Insights / Questions
-- 
+- I need to slow the pace of learning down.  Asked ChatGPT to rearrange the tracks in the projects,  rotating through two each day, three hours each.  I also asked for fewer tasks in each track, giving me more time to complete them, with deeper notes.  It also adds time to discover new learning opportunities.
 
 ## 🚀 Next actions
-- [ ]
+- [ ] W3C Schools JavaScript Tutorial lessons:
+    - [ ] JS Variables 
+    - [ ] JS Let
+    - [ ] JS Const
+    - [ ] JS Operators
+    - [ ] JS Arithmetic
+- [ ]  Create `TrackRepository`, which extends `JpaRepository<Track,Long>`
+    - [ ] Add Controller, implement `GET /tracks`
+        - [ ] Returns one track
+    - [ ] Add Spring MVC test (H2) profile that asserts JSON array size 1
