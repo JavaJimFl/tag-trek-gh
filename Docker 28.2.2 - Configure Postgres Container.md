@@ -6,6 +6,11 @@ topicName: Configure Postgres container
 status: exploring
 date: 2025-07-02
 publish: true
+tags:
+  - docker
+  - ci/cd
+  - postgresql
+  - tag-trek
 ---
 
 # Docker  28.2.2 - Configure Postgres container

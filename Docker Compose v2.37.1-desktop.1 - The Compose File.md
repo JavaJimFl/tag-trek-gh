@@ -6,6 +6,10 @@ topicName: The Compose File
 status: exploring
 date: 2025-07-03
 publish: true
+tags:
+  - docker
+  - ci/cd
+  - tag-trek
 ---
 
 # The Compose File

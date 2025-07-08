@@ -6,6 +6,11 @@ topicName: Why Use Compose
 status: exploring
 date: 2025-07-03
 publish: true
+publish: true
+tags:
+  - docker
+  - ci/cd
+  - tag-trek
 ---
 
 # Why Use Compose
