@@ -1,0 +1,96 @@
+---
+tags: ["course/w3c-schools-javascript-tutorial", "lesson"]
+course: W3C Schools JavaScript Tutorial
+lesson: 04
+title: Statements
+status: done
+publish: true
+tags:
+  - w3c-schools-javascript-tutorial
+  - lesson
+  - javascript
+  - certification
+  - tag-trek
+---
+
+# Statements
+### JavaScript Programs
+
+- Program = list of instructions
+- Instructions = _statements_
+- Browser executes JavaScript in HTML
+
+---
+
+### JavaScript Statements
+- Built from
+    - values
+    - operators
+    - expressions
+    - keywords
+    - comments
+- Executed top to bottom, in order
+- Often called “JavaScript code”
+- Multiple per line separated semicolons
+    - `let a, b, c;` (1 statement)
+    -  `let a; let b; let c;` ( 3 statements)
+
+---
+
+### Examples
+- Declare
+    -  `let x, y, z;`  // No assignment
+- Declare and Assign
+    - `x = 5;` (Global scope if not prev declared)
+    -  `var y = 6;` (function scoped)
+    -  `let name = "bob";` (block-scoped variable)
+    -  `const a = 6;`(block-scoped constant)
+- Compute 
+    - `z = x + y;` 
+
+---
+
+### Semicolons `;`
+- Separate statements
+- Recommended, not required
+- Multiple statements per line allowed  
+    - `a = 5; b = 6; c = a + b;`
+
+---
+
+### White Space
+- Multiple spaces ignored
+- Improves readability
+- Best practice: add space around operators  
+- `let x = y + z;`
+
+---
+
+### Line Length & Breaks
+
+- Avoid lines > 80 characters
+- Break lines after operators
+
+---
+
+### Code Blocks `{...}`
+- Group statements
+- Used in functions, conditionals, loops
+
+---
+
+### Keywords (Reserved Words)
+- Start most statements
+- Can’t be used as variable names
+    
+
+#### Common Keywords
+- `var` – declare variable (function-scoped)
+- `let` – declare block-scoped variable
+- `const` – declare block-scoped constant
+- `if` – conditional block
+- `switch` – multi-case block
+- `for` – loop
+- `function` – define function
+- `return` – exit function
+- `try` – error handling block

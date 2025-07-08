@@ -23,8 +23,7 @@ tags:
     - Change HTML content
         - `document.getElementById("demo").innerHTML = "Hello JavaScript"`
     - Change HTML attributes
-        - `%3Cbutton onClick="document.getElementById('myImage').src='pic_bulboff.gif'"%3E`
-
+        - `%3Cbutton onClick="document.getElementById('myImage').src='pic_bulboff.gif'"`
     - Change HTML Styles (CSS)
         - `document.getElementById("demo").style.fontSize = "35px";`
 - Invented
@@ -37,4 +36,6 @@ tags:
         - ECMAScript
             - Early versions used numbers (ES1, ES2, ES3, ....)
             - Named by year since 2016 (ECMAScript 2016, 2017)
-     - 1997>)
+     - In 1997
+
+![](Pasted%20image%2020250708150057.png)
