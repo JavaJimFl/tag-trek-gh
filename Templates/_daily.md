@@ -39,7 +39,7 @@ Notes | Snippets | Todos…
 ## ⚙️ DevOps Track
 Notes | Snippets | Todos…
 
-## 🧩 Features touched
+## 🧩 Topic touched
 - [[Pattern-matching switch]]
 - [[Text blocks]]
 
