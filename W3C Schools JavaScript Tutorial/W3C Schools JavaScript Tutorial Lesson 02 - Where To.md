@@ -3,6 +3,7 @@ course: W3C Schools JavaScript Tutorial
 lesson: 02
 title: Where To
 status: done
+date: 2025-07-04
 publish: true
 tags:
   - w3c-schools-javascript-tutorial
