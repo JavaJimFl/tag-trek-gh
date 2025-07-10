@@ -15,13 +15,22 @@ publish: true
     - [ ] JS Operators
     - [ ] JS Arithmetic
 - [ ] 🌳 Middleware :
+    - [x] Installed Pitest IntelliJ plugin ✅ 2025-07-09
+    - [x] Added Pitest configuration to project pom.xml ✅ 2025-07-09
+    - [x] Added SureFire configuration to project pom.xml ✅ 2025-07-09
+    - [x] Added FailSafe configuration to project pom.xml ✅ 2025-07-09
+    - [x] Added JaCoCo configuration to project pom.xml ✅ 2025-07-09
+    - [x] Unit-tested ArtistController using @WebMVCTest ✅ 2025-07-09
+    - [x] Finished unit-testing ArtistEntityMapper ✅ 2025-07-09
+    - [x] Finished unit-testing ArtistDtoMapper ✅ 2025-07-09
+    - [x] Unit-tested ArtistService ✅ 2025-07-09
 - [ ] ⚙️ DevOps  : 
 
 ## 🐣 UI Track
 Notes | Snippets | Todos…
 
 ## 🌳 Middleware Track
-Notes | Snippets | Todos…
+
 
 ## ⚙️ DevOps Track
 Notes | Snippets | Todos…
