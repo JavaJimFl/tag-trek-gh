@@ -7,10 +7,10 @@ publish: true
 # TagTrek Bootcamp Day 9 – 2025-07-10
 
 ## 🎯 Goals
-- [ ] 🐣 UI:
-    - [ ] W3C Schools JavaScript Tutorial lessons:
-        - [ ] JS Operators
-        - [ ] JS Arithmetic
+- [x] 🐣 UI: ✅ 2025-07-10
+    - [x] W3C Schools JavaScript Tutorial lessons: ✅ 2025-07-10
+        - [x] JS Operators ✅ 2025-07-10
+        - [x] JS Arithmetic ✅ 2025-07-10
 - [ ] 🌳 Middleware :
 - [ ] ⚙️ DevOps  : 
 
@@ -24,8 +24,14 @@ Notes | Snippets | Todos…
 Notes | Snippets | Todos…
 
 ## 🧩 Topic touched
-- [[Pattern-matching switch]]
-- [[Text blocks]]
+```dataview
+table date
+from ""
+where date = date(2025-07-10)
+and type != "daily"
+and contains(tags, "tag-trek")
+sort date desc
+```
 
 ## 🔍 Insights / Questions
 - 

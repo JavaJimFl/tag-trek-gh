@@ -1,0 +1,30 @@
+---
+languageOrFramework: JavaScript
+version: undefined
+topicName: Multiplication Operator
+status: exploring
+date: 2025-07-10
+publish: true
+tags:
+  - javascript
+  - certification
+  - tag-trek
+---
+
+# Multiplication Operator
+## Overview
+- The Multiplication operator (`*`) subtracts one numeric value from another.
+- JavaScript will try to convert a non-number to a number
+## Example
+```javascript
+
+// Numeric Multiplication
+let x = 5;
+let y = 2;
+let z = x * y; // 10
+
+// Multiplication with type coercion
+let a = "6";
+let b = 2;
+let product = a * b; // 12 ("6" is coerced to number)
+```
