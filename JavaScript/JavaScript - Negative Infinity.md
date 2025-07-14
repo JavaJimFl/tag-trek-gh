@@ -1,0 +1,46 @@
+---
+languageOrFramework: JavaScript
+version: undefined
+topicName: Negative Infinity
+status: exploring
+date: 2025-07-13
+publish: true
+tags:
+  - javascript
+  - certification
+  - tag-trek
+  - data-type
+---
+# JavaScript - Infinity
+
+## Overview
+- `-Infinity` is the negative counterpart to `Infinity`. It represents a value smaller than any other number in JavaScript.
+    ```javascript
+    let x = -1 / 0;                // -Infinity
+    let y = -Math.pow(10, 1000); - // -Infinity
+    ```
+
+## Behavior
+- Type is `"number"`
+- Arithmetic with `-Infinity` follows expected rules:
+    ```javascript
+    -Infinity < -1e308;     // true
+    -Infinity === -Infinity; // true
+    ```
+
+## Related Limits
+- `-Number.MAX_VALUE` is the **largest finite negative number** in JavaScript:
+    ```javascript
+    -Number.MAX_VALUE; // ≈ 1.7976931348623157e+308
+    -Infinity < -Number.MAX_VALUE; // true
+    ```
+- Pronounced, "Negative one times ten to the three hundred eighth power"
+- Numbers smaller than `-Number.MAX_VALUE` result in `-Infinity`:
+    ```javascript
+    let tiny = 1e309; // Infinity
+    ```
+
+## typeof Usage
+```javascript
+    typeof -Infinity; // "number"`
+```

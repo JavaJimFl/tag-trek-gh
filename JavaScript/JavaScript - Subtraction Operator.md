@@ -1,0 +1,31 @@
+---
+languageOrFramework: JavaScript
+version: undefined
+topicName: Subtraction Operator
+status: exploring
+date: 2025-07-10
+publish: true
+tags:
+  - javascript
+  - certification
+  - tag-trek
+---
+
+# Subtraction Operator
+## Overview
+- The subtraction operator (`-`) subtracts one numeric value from another.
+- Unlike (`+`), it only works with numbers
+- JavaScript will try to convert a non-number to a number
+## Example
+```javascript
+
+// Numeric subtraction
+let x = 5;
+let y = 2;
+let z = x - y; //3
+
+// Subtraction with type coercion
+let a = "10";
+let b = 4;
+let difference = a - b; // 6 ("10" is coerced to number)
+```

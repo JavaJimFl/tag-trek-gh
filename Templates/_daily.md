@@ -25,6 +25,8 @@ await tp.file.rename(dailySummaryFileName);
 -%>
 # TagTrek Bootcamp Day <% dayNum %> – <% tp.date.now("YYYY-MM-DD") %>
 
+# Summary
+
 ## 🎯 Goals
 - [ ] 🐣 UI  :  
 - [ ] 🌳 Middleware :
@@ -40,8 +42,14 @@ Notes | Snippets | Todos…
 Notes | Snippets | Todos…
 
 ## 🧩 Topic touched
-- [[Pattern-matching switch]]
-- [[Text blocks]]
+```dataview
+table date
+from ""
+where date = date(<% tp.date.now("YYYY-MM-DD") %>)
+and type != "daily"
+and contains(tags, "tag-trek")
+sort date desc
+```
 
 ## 🔍 Insights / Questions
 - 

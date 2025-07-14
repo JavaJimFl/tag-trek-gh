@@ -1,0 +1,41 @@
+---
+course: W3C Schools JavaScript Tutorial
+lesson: 01
+title: Introduction
+status: done
+publish: true
+tags:
+  - w3c-schools-javascript-tutorial
+  - lesson
+  - javascript
+  - certification
+  - tag-trek
+---
+
+# Introduction
+## JavaScript
+- Is the web programming language
+- Can
+    - Hide HTML elements:
+        - `document.getElementById("demo").style.display = "none";`
+    - Show HTML elements
+        - `document.getElementById("demo").style.display = "block";`
+    - Change HTML content
+        - `document.getElementById("demo").innerHTML = "Hello JavaScript"`
+    - Change HTML attributes
+        - `%3Cbutton onClick="document.getElementById('myImage').src='pic_bulboff.gif'"`
+    - Change HTML Styles (CSS)
+        - `document.getElementById("demo").style.fontSize = "35px";`
+- Invented
+    -  By Brendan Eich
+        -  1995
+- Became Enterprise Cloud Management Agency (ECMA) standard
+    - Standard name
+        - ECMA-262
+    - Official language name
+        - ECMAScript
+            - Early versions used numbers (ES1, ES2, ES3, ....)
+            - Named by year since 2016 (ECMAScript 2016, 2017)
+     - In 1997
+
+![](Pasted%20image%2020250708150057.png)
