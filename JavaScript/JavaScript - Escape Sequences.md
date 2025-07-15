@@ -1,0 +1,54 @@
+---
+languageOrFramework: JavaScript
+version: undefined
+topicName: "Escape Sequences"
+status: exploring
+date: 2025-07-14
+publish: true
+tags:
+  - javascript
+  - certification
+  - tag-trek
+---
+
+# JavaScript - Escape Sequences
+
+## Overview
+- Inner nested quotes of the same type (`'`, `"`)  must be escaped
+- Otherwise, JavaScript will terminate the string incorrectly.
+- Use the **Backslash character (`\`)**  to escape quotes and special characters.
+- Escape sequences are also used to represent:
+    - Invisible characters
+    - Control characters
+
+## Examples
+```javascript
+// Escapes a double quote within a double-quoted string
+let text1 = "We are the so-called \"Vikings\" from the north.";
+
+// Escapes a single quote within a single-quoted string
+let text2 = 'It\'s alright.';
+
+// Escapes a backslash in a string
+let text3 = "The character \\ is called backslash.";
+```
+
+## Notes
+- These are the valid JavaScript escape sequences.  Most have no use in HTML, but they do in non-HTML contexts:
+
+| code | result               | description         | Useful for HTML? |
+| ---- | -------------------- | ------------------- | ---------------- |
+| `\'` | `'`                  | Single quote        | ✅               |
+| `\"` | `"`                  | Double quote        | ✅               |
+| `\\` | `\`                  | Backslash           | ✅               |
+| `\b` | Backspace            | Invisible character | ❌               |
+| `\f  | Form Feed            | Control character   | ❌               |
+| `\n` | New Line             | Invisible character | ❌ (use <br>)    |
+| `\r` | Carriage Return      | Control character   | ❌               |
+| `\t` | Horizontal Tabulator | Invisible character | ❌               |
+| `\v` | Vertical Tabulator   | Invisible character | ❌               |
+
+⚠️ In HTML, use entities like `&quot;`, `&lt;`, and `<br>` instead of escape sequences.
+
+## Related
+[[JavaScript - String Data Type]]

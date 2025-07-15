@@ -1,0 +1,22 @@
+---
+languageOrFramework: JavaScript
+version: undefined
+topicName: String Quotes
+status: exploring
+date: 2025-07-14
+publish: true
+tags:
+  - javascript
+  - certification
+  - tag-trek
+---
+# JavaScript - String Quotes
+
+## Overview
+- Strings in JavaScript can be defined using **single (`'`)** or **double (`"`)** quotes.
+- The two styles are functionally equivalent.
+- You can include one type of quote inside the other without escaping.
+```javascript
+let a = "It's fine";
+let b = 'He said "Hello"';
+```
