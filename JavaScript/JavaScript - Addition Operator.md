@@ -15,7 +15,9 @@ tags:
 ## Overview
 - The addition operator (`+`) adds numbers or concatenates strings.
 - Behavior depends on the operand types
+- 
 ## Example
+
 ```javascript
 
 // Numeric addition
@@ -29,3 +31,43 @@ let name = "Jim";
  // "Hello, Jim"
 let greeting = "Hello, " + name;
 ```
+
+## Flashcards
+
+<!--ANKI START-->
+
+Q: What does the `+` operator do in JavaScript?  
+A: It either adds numbers or concatenates strings, depending on the operand types.
+
+---
+
+Q: How does JavaScript determine whether to add numbers or concatenate strings using the `+` operator?  
+A: If either operand is a string, JavaScript coerces the other to a string and performs string concatenation. Otherwise, it performs numeric addition.
+
+---
+
+Q: What is the result of the following code?  
+```javascript
+let x = 5;
+let y = 2;
+let z = x + y;
+```  
+A: `z` is `7` — numeric addition of 5 and 2.
+
+---
+
+Q: What is the value of `greeting` in this code?  
+```javascript
+let name = "Jim";
+let greeting = "Hello, " + name;
+```  
+A: `"Hello, Jim"` — the `+` operator concatenates the strings.
+
+---
+
+```javascript
+let name = "Jim";
+let greeting = {{c1::"Hello, "}} + {{c2::name}}; // → {{c3::"Hello, Jim"}}
+```
+
+<!--ANKI END-->
