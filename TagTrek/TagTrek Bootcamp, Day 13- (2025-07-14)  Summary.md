@@ -11,8 +11,8 @@ publish: true
 ## 🎯 Goals
 - [ ] 🐣 UI  :  
     - [ ] [[W3C Schools JavaScript Tutorial Lesson 013 - JavaScript Data Types]]
-        - [x] [[JavaScript - Number Data Type]] ✅ 2025-07-14
-        - [x] [[JavaScript - BigInt Data Type]] ✅ 2025-07-14
+        - [x] [[61.220 - JavaScript Number Data Type]] ✅ 2025-07-14
+        - [x] [[61.230 - JavaScript BigInt Data Type]] ✅ 2025-07-14
 - [ ] 🌳 Middleware :
 - [ ] ⚙️ DevOps  : 
 - [ ] LinkedIn Docker Foundations Professional Certificate course
