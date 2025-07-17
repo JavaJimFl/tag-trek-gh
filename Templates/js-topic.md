@@ -7,7 +7,6 @@ const today = tp.date.now("YYYY-MM-DD");
 -%>
 ---
 languageOrFramework: JavaScript
-version: undefined
 topicName: "<% topic %>"
 status: exploring
 date: <% today %>

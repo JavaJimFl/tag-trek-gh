@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Spring
-version: undefined
 topicName: @Transactional
 status: exploring
 date: 2025-07-07

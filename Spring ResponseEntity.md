@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Spring
-version: undefined
 topicName: ResponseEntity
 status: exploring
 date: 2025-07-07

@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Spring JPA
-version: undefined
 topicName: Repositories
 status: exploring
 date: 2025-07-07

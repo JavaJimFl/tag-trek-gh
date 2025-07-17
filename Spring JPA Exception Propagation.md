@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Spring JPA
-version: undefined
 topicName: Exception Propagation
 status: exploring
 date: 2025-07-07

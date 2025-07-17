@@ -1,6 +1,5 @@
 ---
 languageOrFramework: REST
-version: undefined
 topicName: Operations
 status: exploring
 date: 2025-07-07

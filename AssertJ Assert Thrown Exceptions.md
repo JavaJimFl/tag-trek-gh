@@ -1,6 +1,5 @@
 ---
 languageOrFramework: AssertJ
-version: undefined
 topicName: Assert Thrown Exceptions
 status: exploring
 date: 2025-07-09

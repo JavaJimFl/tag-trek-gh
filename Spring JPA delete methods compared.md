@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Spring
-version: undefined
 topicName: JPA delete methods compared
 status: exploring
 date: 2025-07-07

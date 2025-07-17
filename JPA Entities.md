@@ -1,6 +1,5 @@
 ---
 languageOrFramework: JPA
-version: undefined
 topicName: Entities
 status: exploring
 date: 2025-07-05

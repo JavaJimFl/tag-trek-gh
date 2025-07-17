@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Spring AOP
-version: undefined
 topicName: Overview
 status: exploring
 date: 2025-07-07

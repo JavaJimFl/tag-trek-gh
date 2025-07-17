@@ -1,6 +1,5 @@
 ---
 languageOrFramework: AssertJ
-version: undefined
 topicName: String Parameter Validation
 status: exploring
 date: 2025-07-09

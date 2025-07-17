@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Java
-version: undefined
 topicName: Features by release
 status: exploring
 date: 2025-07-05

@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Java
-version: undefined
 topicName: Ecosystem
 status: exploring
 date: 2025-07-05

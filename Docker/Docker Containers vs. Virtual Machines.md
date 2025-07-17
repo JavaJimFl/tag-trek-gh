@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Docker
-version: undefined
 topicName: Docker Containers vs. Virtual Machines
 status: exploring
 date: 2025-07-14

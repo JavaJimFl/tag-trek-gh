@@ -1,6 +1,5 @@
 ---
 languageOrFramework: Aspect-Oriented Programming (AOP)
-version: undefined
 topicName: Overview
 status: exploring
 date: 2025-07-07
